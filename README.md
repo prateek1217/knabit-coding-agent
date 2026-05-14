@@ -43,15 +43,6 @@ The agent uses a two-component architecture:
 
 When you type a query, the agent sends it to LLM along with the available tools.  Gemini decides to calls the MCP server which executes the action on your actual filesystem.
 
-## Features
-
-- Read, write, move, copy, and delete files
-- Find and replace inside files (targeted edits)
-- Search across all project files by pattern or filename
-- Run any shell command (install packages, run tests, execute scripts)
-- Git operations: status, diff, commit
-- Sliding window conversation memory with automatic summarization
-- Persistent chat history via SQLite
 
 ## Setup
 
