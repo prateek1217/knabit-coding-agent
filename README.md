@@ -1,3 +1,8 @@
+<img width="1480" height="820" alt="image" src="https://github.com/user-attachments/assets/7486907d-e843-46e1-8e3a-3b7d8a344315" />
+
+
+
+
 ## Sliding Window Context Optimization
 
 One of the core achievements of this agent is a **token-efficient context management system** that keeps long conversations affordable without losing important history.
@@ -25,6 +30,7 @@ No matter how long the conversation gets, the token count per query stays roughl
 - **Never loses context** — important history is compressed, not discarded
 - **Scales indefinitely** — a 100-turn session costs nearly the same per query as a 10-turn session
 - **No external memory store needed** — no vector DB, no embeddings, pure in-process
+
 
 
 
