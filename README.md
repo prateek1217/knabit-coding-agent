@@ -16,7 +16,6 @@ Instead of sending the full history, the agent:
 1. **Splits** the conversation into turns (each Human → AI exchange is one turn)
 2. **Keeps only the last `N` turns** (configurable via `WINDOW_SIZE`) in full detail
 3. **Summarizes all older turns** into a compact text block using the LLM itself — preserving key decisions, file names, and code changes
-4. **Sends** `[system prompt] + [summary of old turns] + [last N turns]` to the LLM on every query
 
 No matter how long the conversation gets, the token count per query stays roughly constant.
 
