@@ -36,7 +36,7 @@ No matter how long the conversation gets, the token count per query stays roughl
 
 # Coding Agent
 
-Developed by **Prateek Khandelwal**
+
 
 An AI-powered coding assistant that runs locally and helps you read, write, refactor, debug, and execute code inside your project. Built with LangGraph, LangChain, it uses a custom MCP (Model Context Protocol) server to give the AI real filesystem and shell access.
 
@@ -51,6 +51,10 @@ When you type a query, the agent sends it to LLM along with the available tools.
 
 
 ## Setup
+
+
+Note : Make sure you have installed uv python package 
+
 
 1. Install dependencies:
    ```bash
@@ -67,4 +71,24 @@ When you type a query, the agent sends it to LLM along with the available tools.
    uv run agent.py
    ```
 
+4. MCP Configuration
+   ```bash 
+   servers = {
+    "server": {
+        "transport": "stdio",
+        "command": "/opt/homebrew/bin/uv",
+        "args": [
+            "run",
+            "fastmcp",
+            "run",
+            os.path.join(PROJECT_DIR, "server.py")
+        ]
+    }
+   }
+ ```
+
+Find the path of uv by command "which uv" ( Mac ) or "where uv" ( windows ) and put it in "command" 
+
+
+Developed by **Prateek Khandelwal**
 
