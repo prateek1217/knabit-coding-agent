@@ -84,10 +84,10 @@ Note : Make sure you have installed uv python package
             os.path.join(PROJECT_DIR, "server.py")
         ]
     }
-   }
- ```
+   } ```
 
-Find the path of uv by command "which uv" ( Mac ) or "where uv" ( windows ) and put it in "command" 
+Get the path by running  "which uv" ( Mac ) or "where uv" ( windows ) i terminal and put it in "command" 
+
 
 
 Developed by **Prateek Khandelwal**
