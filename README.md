@@ -84,7 +84,8 @@ Note : Make sure you have installed uv python package
             os.path.join(PROJECT_DIR, "server.py")
         ]
     }
-   } ```
+   }
+   ```
 
 Get the path by running  "which uv" ( Mac ) or "where uv" ( windows ) i terminal and put it in "command" 
 
